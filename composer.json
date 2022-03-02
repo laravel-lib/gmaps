@@ -1,0 +1,40 @@
+{
+    "name": "laravel-lib/gmaps",
+    "description": "Google Maps API for Laravel",
+    "keywords": ["laravel", "google", "maps", "mapping", "streetview", "map"],
+    "homepage": "https://github.com/laravel-lib/gmaps",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zulkifli Mohamed",
+            "email": "mr.putera@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1",
+        "ext-json": "*",
+        "illuminate/view": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelLib\\Gmaps\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelLib\\Gmaps\\MapServiceProvider"
+            ],
+            "aliases": {
+                "Map": "LaravelLib\\Gmaps\\Facades\\Map"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
