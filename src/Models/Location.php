@@ -2,8 +2,8 @@
 
 namespace LaravelLib\Gmaps\Models;
 
-use LaravelLib\Gmaps\Contracts\ObjectableInterface;
 use LaravelLib\Gmaps\Map;
+use LaravelLib\Gmaps\Contracts\ObjectableInterface;
 
 class Location implements ObjectableInterface
 {

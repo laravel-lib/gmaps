@@ -2,20 +2,20 @@
 
 namespace LaravelLib\Gmaps;
 
-use LaravelLib\Gmaps\Contracts\MappingInterface;
-use LaravelLib\Gmaps\Exceptions\MapArgumentException;
+use Exception;
+use LaravelLib\Gmaps\Models\Location;
+use LaravelLib\Gmaps\Models\Streetview;
+use LaravelLib\Gmaps\Models\Map as ModelsMap;
 use LaravelLib\Gmaps\Exceptions\MapException;
-use LaravelLib\Gmaps\Exceptions\MapInstanceException;
+use LaravelLib\Gmaps\Contracts\MappingInterface;
 use LaravelLib\Gmaps\Exceptions\MapSearchException;
+use LaravelLib\Gmaps\Exceptions\MapArgumentException;
+use LaravelLib\Gmaps\Exceptions\MapInstanceException;
 use LaravelLib\Gmaps\Exceptions\MapSearchKeyException;
 use LaravelLib\Gmaps\Exceptions\MapSearchLimitException;
-use LaravelLib\Gmaps\Exceptions\MapSearchResponseException;
 use LaravelLib\Gmaps\Exceptions\MapSearchResultException;
+use LaravelLib\Gmaps\Exceptions\MapSearchResponseException;
 use LaravelLib\Gmaps\Exceptions\MapSearchResultMalformedException;
-use LaravelLib\Gmaps\Models\Location;
-use LaravelLib\Gmaps\Models\Map as ModelsMap;
-use LaravelLib\Gmaps\Models\Streetview;
-use Exception;
 
 class Map extends MapBase implements MappingInterface
 {

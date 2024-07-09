@@ -2,11 +2,11 @@
 
 namespace LaravelLib\Gmaps;
 
+use Illuminate\View\Factory as View;
+use LaravelLib\Gmaps\Traits\Regions;
+use LaravelLib\Gmaps\Traits\Languages;
 use LaravelLib\Gmaps\Contracts\MappingBaseInterface;
 use LaravelLib\Gmaps\Exceptions\MapArgumentException;
-use LaravelLib\Gmaps\Traits\Languages;
-use LaravelLib\Gmaps\Traits\Regions;
-use Illuminate\View\Factory as View;
 
 abstract class MapBase implements MappingBaseInterface
 {

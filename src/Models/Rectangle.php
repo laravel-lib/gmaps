@@ -2,8 +2,8 @@
 
 namespace LaravelLib\Gmaps\Models;
 
-use LaravelLib\Gmaps\Contracts\ModelingInterface;
 use Illuminate\View\Factory as View;
+use LaravelLib\Gmaps\Contracts\ModelingInterface;
 
 class Rectangle implements ModelingInterface
 {

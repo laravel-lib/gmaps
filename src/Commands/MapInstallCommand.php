@@ -14,14 +14,16 @@ class MapInstallCommand extends Command
     {
         $this->updateNodePackages(function ($packages) {
             return [
-                '@googlemaps/js-api-loader' => '^1.13.7',
+                '@googlemaps/js-api-loader' => '^1.16.6',
                 'js-marker-clusterer' => '^1.0.0',
             ] + $packages;
         });
 
+        // Copy config files and maps view blade files
         File::copy(__DIR__ . '/../../config/config.php', config_path('maps.php'));
         File::copyDirectory(__DIR__ . '/../../resources/views', base_path('resources/views/maps'));
 
+        // Copy maps.js to resources/js/components/maps.js
         File::ensureDirectoryExists(resource_path('js/components'));
         File::copy(__DIR__ . '/../../resources/js/maps.js', resource_path('js/components/maps.js'));
         $this->injectGmaps();

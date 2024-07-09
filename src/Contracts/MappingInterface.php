@@ -2,12 +2,12 @@
 
 namespace LaravelLib\Gmaps\Contracts;
 
-use LaravelLib\Gmaps\Exceptions\MapArgumentException;
+use LaravelLib\Gmaps\Models\Location;
 use LaravelLib\Gmaps\Exceptions\MapException;
 use LaravelLib\Gmaps\Exceptions\MapSearchException;
+use LaravelLib\Gmaps\Exceptions\MapArgumentException;
 use LaravelLib\Gmaps\Exceptions\MapSearchLimitException;
 use LaravelLib\Gmaps\Exceptions\MapSearchResultException;
-use LaravelLib\Gmaps\Models\Location;
 
 interface MappingInterface
 {

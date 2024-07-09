@@ -78,7 +78,7 @@ var marker_{!! $id !!} = new google.maps.Marker({
                 @foreach ($options['icon'] as $key => $value)
 
                     @switch($key)
-@case('symbol')
+                        @case('symbol')
                             path: google.maps.SymbolPath.{!! $value !!},
                         @break;
 
